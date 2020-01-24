@@ -5,7 +5,7 @@
   "main": "arrayShift.js",
   "scripts": {
     "test": " jest --verbose --coverage" ,
-    "start": ""
+    "lint": "eslint '**/*.js'"
   },
   "keywords": [],
   "author": "",

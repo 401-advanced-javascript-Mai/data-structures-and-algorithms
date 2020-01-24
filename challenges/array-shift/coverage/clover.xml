@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1579718674474" clover="3.2.0">
-  <project timestamp="1579718674474" name="All files">
+<coverage generated="1579876193723" clover="3.2.0">
+  <project timestamp="1579876193723" name="All files">
     <metrics statements="15" coveredstatements="8" conditionals="6" coveredconditionals="0" methods="2" coveredmethods="1" elements="23" coveredelements="9" complexity="0" loc="15" ncloc="15" packages="1" files="1" classes="1"/>
     <file name="arrayShift.js" path="/mnt/c/Users/std28/codefellows/401/data-structures-and-algorithms/challenges/array-shift/arrayShift.js">
       <metrics statements="15" coveredstatements="8" conditionals="6" coveredconditionals="0" methods="2" coveredmethods="1"/>
