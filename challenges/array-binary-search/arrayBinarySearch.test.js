@@ -12,7 +12,7 @@ describe('Binary search method ' , ()=>{
     it ('validate if the function binarySearch  return the coreect value ', () => {
         let array = [1,14,28,95] ;
         let value = 14 ;
-        expect( binary.binarySearch(array, value)).toEqual(14) ;
+        expect( binary.binarySearch(array, value)).toEqual(1) ;
     })
 })
 

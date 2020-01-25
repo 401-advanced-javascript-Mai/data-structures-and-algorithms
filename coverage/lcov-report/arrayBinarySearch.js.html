@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">75% </span>
+                <span class="strong">80% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>12/16</span>
+                <span class='fraction'>16/20</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">73.33% </span>
+                <span class="strong">78.95% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>11/15</span>
+                <span class='fraction'>15/19</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -111,33 +111,40 @@
 <a name='L52'></a><a href='#L52'>52</a>
 <a name='L53'></a><a href='#L53'>53</a>
 <a name='L54'></a><a href='#L54'>54</a>
-<a name='L55'></a><a href='#L55'>55</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">25x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -152,6 +159,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -169,7 +177,7 @@
 let binary =module.exports ;
 &nbsp;
 &nbsp;
-// let array = [ 1 ,2 ,30 , 4 ,80, 17, 25 ];
+let array = [ 1 ,2 ,30 , 4 ,80, 17, 25 ];
 &nbsp;
 binary.sorted = function(array){
 &nbsp;
@@ -182,7 +190,9 @@ binary.sorted = function(array){
 // binary.sorted(array)
  
  binary.binarySearch = function  (arr, value){
-    let highIndex = arr.length -1 ;
+     let arrSorted = binary.sorted(arr);
+     console.log('arr', arrSorted)
+    let highIndex = arrSorted.length -1 ;
     let lessIndex =0 ;
     let midPoint=0 ; 
     // as it less and we can look through it 
@@ -190,10 +200,11 @@ binary.sorted = function(array){
         // to get the middle value using middle index
         let midPoint= Math.floor((lessIndex + highIndex)/2) ;
 // if the middle equal what we look for it it will be return     
-   <span class="missing-if-branch" title="else path not taken" >E</span>if (arr[midPoint] === value ){
-        return arr[midPoint] ;
+   <span class="missing-if-branch" title="else path not taken" >E</span>if (arrSorted[midPoint] === value ){
+        return midPoint ;
+        // return arr[midpoint] // if i want to return the value not the index
         /// if the value greater than what shoud be increase the less index 1
-    } else <span class="cstat-no" title="statement not covered" >if (value &gt;arr[midPoint]){</span>
+    } else <span class="cstat-no" title="statement not covered" >if (value &gt;arrSorted[midPoint]){</span>
 <span class="cstat-no" title="statement not covered" >        lessIndex = midPoint+1 ;</span>
         //else which mean less 
     }else {
@@ -206,7 +217,8 @@ binary.sorted = function(array){
 &nbsp;
 &nbsp;
 //  binarySearch(array,3)
-//  console.log('binarySearch(array,69)', binarySearch(array, 69))
+ console.log('binarySearch(array,69)',binary.binarySearch(array, 17
+    ))
 &nbsp;
 &nbsp;
 &nbsp;
@@ -226,7 +238,7 @@ binary.sorted = function(array){
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sat Jan 25 2020 01:05:26 GMT+0200 (Eastern European Standard Time)
+                at Sat Jan 25 2020 06:34:45 GMT+0200 (Eastern European Standard Time)
             </div>
         </div>
         <script src="prettify.js"></script>
