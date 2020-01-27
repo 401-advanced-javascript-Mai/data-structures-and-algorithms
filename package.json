@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint **/*.js",
+    "lint": "eslint '**/*.js'",
     "test": "jest --verbose --coverage"
-
   },
   "repository": {
     "type": "git",
