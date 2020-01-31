@@ -25,7 +25,21 @@ class LinkedList {
 
     }
   }
-
+  // this will be used in test of inset before and after insert 
+  toStringType() {// "{ a } -> { b } -> { c } -> NULL"
+    let currentNode = this.head;
+    let arr = [] ;
+    while (currentNode) {
+      arr.push(currentNode.value);
+      currentNode = currentNode.next;
+      // currentNode.value += str;// str = 'abc'
+    }
+    // arr  = ['{ a }', '{ b }', c]
+    return arr.map(val => `{ ${val} }`).join(' --> ').concat(` --> NULL`);
+    // arr  = ['{ a }', '{ b }', '{ c }']
+    // arr  = { a } --> { b } --> { c } --> NULL  
+  }
+      
   insertBefore(val,newvalue){
     let nodeToInsert = new Node (newvalue);
     // let previous ;
@@ -52,7 +66,7 @@ class LinkedList {
         break ;
       }
       currentNode = currentNode.next ;
-    };
+    }
   }
 }
 //   insertAfter(value, newVal){

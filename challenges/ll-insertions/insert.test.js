@@ -19,7 +19,9 @@ describe('Linked List Module', () => {
     list2.append('b');
     list2.append('c');
     list2.insertBefore('b','done');
-    expect(list2.head.value).toEqual('done');
+    let str = list2.toStringType();
+    expect(str).toBe( '{ A } --> { done } --> { b } --> { c } --> NULL');
+    
     // expect(LL.toString()).toMatch("1 -> test -> 2 -> 3 -> NULL")
   });
 
