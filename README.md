@@ -15,4 +15,4 @@ the big o > time......... o(N)
 space.........o(1)
 
 ## solution
-https://github.com/401-advanced-javascript-Mai/data-structures-and-algorithms/blob/ll-kth-from-end/ll-kth-from-end.jpg
+https://github.com/401-advanced-javascript-Mai/data-structures-and-algorithms/blob/ll-insertions/ll%20insert.jpg
