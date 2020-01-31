@@ -21,8 +21,22 @@ describe('Linked List Module', () => {
     list2.insertBefore('b','done');
     let str = list2.toStringType();
     expect(str).toBe( '{ A } --> { done } --> { b } --> { c } --> NULL');
-    
+
     // expect(LL.toString()).toMatch("1 -> test -> 2 -> 3 -> NULL")
+  });
+
+  it('insertAfter()>> should insert anew value After certin value ', () => {
+    let list3 = new LinkedList();
+    list3.append('A');
+    list3.append('b');
+    list3.append('c');
+    list3.insertAfter('b','done');
+    let str = list3.toStringType();
+    expect(str).toBe( '{ A } --> { b } --> { done } --> { c } --> NULL');
+    list3.append('too hard');
+    // list3.insertAfter('c','too hard') ;
+    // let str2 = list3.toStringType();
+    // expect(str2).toBe('{ A } --> { b } --> { c } --> { too hard } --> NULL');
   });
 
 });

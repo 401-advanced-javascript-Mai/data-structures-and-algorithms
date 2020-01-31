@@ -25,7 +25,7 @@ class LinkedList {
 
     }
   }
-  // this will be used in test of inset before and after insert 
+  // this will be used in test of inset before and after insert
   toStringType() {// "{ a } -> { b } -> { c } -> NULL"
     let currentNode = this.head;
     let arr = [] ;
@@ -37,9 +37,10 @@ class LinkedList {
     // arr  = ['{ a }', '{ b }', c]
     return arr.map(val => `{ ${val} }`).join(' --> ').concat(` --> NULL`);
     // arr  = ['{ a }', '{ b }', '{ c }']
-    // arr  = { a } --> { b } --> { c } --> NULL  
+    // arr  = { a } --> { b } --> { c } --> NULL
   }
-      
+
+
   insertBefore(val,newvalue){
     let nodeToInsert = new Node (newvalue);
     // let previous ;
@@ -68,8 +69,67 @@ class LinkedList {
       currentNode = currentNode.next ;
     }
   }
+
+  //   insertAfter(val, newValue){
+  //     let nodeToInsert = new Node(newValue);
+  //     let currentNode = this.head ;
+  //     while(currentNode.next !== null){
+  //       // eslint-disable-next-line no-cond-assign
+  //       if ( currentNode.value = val ){
+  //             nodeToInsert.next = currentNode.next ;
+  //             currentNode.next = nodeToInsert ;
+  // //
+
+  //             break ;
+  //         }
+  //         currentNode = currentNode.next ;
+  //       }
+  //     }
+  // }
+
+
+
+  insertAfter(val, newValue){
+    const nodeToInsert = new Node(newValue, null);
+    let currentNode = this.head;
+    while (currentNode.next !== null) {
+      if (currentNode.value === val) {
+        nodeToInsert.next = currentNode.next;
+        currentNode.next = nodeToInsert;
+        break;
+      }
+      currentNode = currentNode.next;
+    }
+  }
+
 }
-//   insertAfter(value, newVal){
+
+
+// while do
+// var text = "";
+// var i = 0;
+// do {
+//   text += "The number is " + i;
+//   i++;
+// }
+// while (i < 5);
+// insertAfter(val, newValue) {
+//     let nodeToInsert = new Node(newValue);
+//     let currentNode = this.head;
+//     do {
+//         if (currentNode.value === val) {
+//             nodeToInsert.next = currentNode.next;
+//             currentNode.next = nodeToInsert;
+//             break;
+//         }
+//     } while (currentNode.next !== null);
+
+// }
+
+//   }
+
+
+
 //     let currentNode;
 //     let previousNode;
 
@@ -78,9 +138,8 @@ class LinkedList {
 //       this.head = new Node(newVal);
 //     }
 
-//     let newNode = new Node(newVal);
 //     currentNode = this.head;//start from head
-//     while (currentNode.value !== value) { //keep searching 
+//     while (currentNode.value !== value) { //keep searching
 //       previousNode = currentNode;
 //       currentNode = currentNode.next;
 //     }
@@ -88,7 +147,5 @@ class LinkedList {
 //     previousNode.next = currentNode ;
 
 //     this.size++;
-
-//   };
 
 module.exports = LinkedList ;
