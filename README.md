@@ -13,3 +13,4 @@ And every time from diferrent linked list .
   time......... o(1) 
   ## solution
 
+https://github.com/401-advanced-javascript-Mai/data-structures-and-algorithms/blob/ll-merge/merge.jpg
