@@ -50,7 +50,7 @@ describe('Queue', () => {
     queue.enqueue('c');
     // console.log('queue', queue);
     let item = queue.dequeue();
-    expect(item).toEqual('a');
+    ex0pect(item).toEqual('a');
     expect(queue.front.value).toEqual('b');
 
   });

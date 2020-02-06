@@ -17,7 +17,7 @@ class Stack {
   push(val) {
     const node = new Node(val); // create a new node
     // console.log(node);
-    node.next = this.top;
+    node.next = this.top; // node.next = null;
     this.top = node; // reassign the stack's top to the new node
   }
 
@@ -104,12 +104,12 @@ class Queue {
 }
 
 module.exports = { Node, Stack, Queue, } ;
-// const test = new Stack();
-// test.push('a');
-// test.push('b');
-// test.push('c');
+const test = new Stack();
+test.push('a');
+test.push('b');
+test.push('c');
 // console.log(test.pop());
-// console.log(test.peek());
+console.log(test);
 
 
 // ///  test >>>> stack{ top : { value : 'a' , next : node { value :'b' next : node {value : 'c' , next: null }}}
