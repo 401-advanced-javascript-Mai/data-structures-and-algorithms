@@ -109,7 +109,7 @@ test.push('a');
 test.push('b');
 test.push('c');
 // console.log(test.pop());
-console.log(test);
+// console.log(test);
 
 
 // ///  test >>>> stack{ top : { value : 'a' , next : node { value :'b' next : node {value : 'c' , next: null }}}
