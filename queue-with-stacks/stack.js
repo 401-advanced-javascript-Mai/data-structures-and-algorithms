@@ -1,3 +1,5 @@
+/* eslint-disable no-redeclare */
+/* eslint-disable no-undef */
 
 'use strict';
 
@@ -43,11 +45,11 @@ class Stack {
   }
   isEmpty(){
     if (!this.top){
-      return true
+      return true;
     }else {
-      return false 
+      return false;
     }
 
   }
 }
-module.exports = {Stack , Node}
+module.exports = {Stack , Node,};

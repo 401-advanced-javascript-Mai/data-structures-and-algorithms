@@ -1,28 +1,29 @@
+/* eslint-disable no-undef */
 
 'use strict';
-let { Stack } = require('./stack.js')
+let { Stack, } = require('./stack.js');
 // let dequeueArray = [];
 
 class PseudoQueue {
-    constructor() {
-        this.newQueue1 = new Stack;
-        this.newQueue2 = new Stack;
+  constructor() {
+    this.newQueue1 = new Stack;
+    this.newQueue2 = new Stack;
 
+  }
+
+  enqueue(value) {
+    this.newQueue1.push(value);
+  }
+
+  dequeue() {
+    while (!this.newQueue1.isEmpty()) {
+
+      let popItem = this.newQueue1.pop();
+      this.newQueue2.push(popItem);
     }
 
-    enqueue(value) {
-        this.newQueue1.push(value)
-    }
-
-    dequeue() {
-        while (!this.newQueue1.isEmpty()) {
-
-            let popItem = this.newQueue1.pop()
-            this.newQueue2.push(popItem)
-        }
-
-        return this.newQueue2.pop()
-    }
+    return this.newQueue2.pop();
+  }
 }
 
 // let list = new PseudoQueue;
@@ -32,4 +33,4 @@ class PseudoQueue {
 
 // console.log ("list.dequeue" ,list.dequeue())
 
-module.exports = PseudoQueue
+module.exports = PseudoQueue;
