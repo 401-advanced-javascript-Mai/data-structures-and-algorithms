@@ -42,6 +42,15 @@ class Stack {
     }
     return null;
   }
+
+  isEmpty(){
+    if (!this.top){
+      return true
+    }else {
+      return false 
+    }
+
+  }
 }
 
 ////////////////// queue
@@ -101,14 +110,19 @@ class Queue {
       return this.front.value;
     }
   }
+
 }
 
 module.exports = { Node, Stack, Queue, } ;
-const test = new Stack();
-test.push('a');
-test.push('b');
-test.push('c');
-// console.log(test.pop());
+// const test = new Stack();
+// test.push('a');
+// test.push('b');
+// test.push('c');
+// test.pop();
+// test.pop();
+// test.pop();
+// // test.isEmpty()
+// console.log(test);
 // console.log(test);
 
 

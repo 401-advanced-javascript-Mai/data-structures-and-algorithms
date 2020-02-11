@@ -27,6 +27,12 @@ describe('Stack', () => {
     stack.push('mai');
     expect(stack.top.value).toEqual('mai');
   });
+  it('should return false if the stack is empty ' , ()=>{
+    let stack = new Stack();
+    stack.push('mai');
+    stack.pop();
+    expect(stack.isEmpty()).toEqual(true)
+  })
 });
 
 
@@ -50,7 +56,7 @@ describe('Queue', () => {
     queue.enqueue('c');
     // console.log('queue', queue);
     let item = queue.dequeue();
-    ex0pect(item).toEqual('a');
+    expect(item).toEqual('a');
     expect(queue.front.value).toEqual('b');
 
   });
