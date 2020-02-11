@@ -41,5 +41,13 @@ class Stack {
     }
     return null;
   }
+  isEmpty(){
+    if (!this.top){
+      return true
+    }else {
+      return false 
+    }
+
+  }
 }
 module.exports = {Stack , Node}
