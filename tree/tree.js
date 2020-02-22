@@ -99,6 +99,7 @@ class BinarySearchTree {
     }
 
     let _search = (node)=>{
+      // console.log(node)
       if(node.value > value){
         if (!node.left){
           // console.log('mai')
@@ -124,33 +125,96 @@ class BinarySearchTree {
     return this.root;
   }
 
-  find(value){
-    let currentNodeInTheTree = this.root ;
-    while(currentNodeInTheTree){
-      if(value === currentNodeInTheTree.value)
-        return true ;
-      if (value < currentNodeInTheTree.value){
-        currentNodeInTheTree = currentNodeInTheTree.left ;
-      }else{
-        currentNodeInTheTree = currentNodeInTheTree.right;
-      }
-      return false;
+// contain(value){
+// console.log(value)
+//     // let currentNodeInTheTree = this.root ;
+//  let _find = (node) =>{
+//    console.log(node)
+
+// if(node.value === value){
+//   console.log('node.value' , node.value)
+  
+//   return true ;
+// }
+
+// if(node.value > value){
+//   if(node.left){
+//     _find(node.left)
+//     //   if(node.value === value){
+//     //     return true
+    
+//     // }
+//   }
+// }
+
+// if(node.value < value){
+//   if(node.right){
+//     _find(node.right);
+//   //   if(node.value === value){
+//   //     return true
+  
+//   // }
+//   }
+contain(value){
+
+  // let b  = 2;
+  let _find = (node) =>{
+    // let c = true;
+    if(node.value === value){
+      
+      // console.log('node', node) ;
+      // console.log("node.value" ,node.value)
+      // console.log(true)
+  return true ;
+      // return b === 2 ;
     }
+   
+ if(node.value > value && node.left){
+      // if(node.left){
+        _find(node.left);
+      // }
+    }
+
+    
+    if(node.value < value && node.right){
+      // if(node.right){
+        _find(node.right);
+      // }
+    }
+
+  };
+
+  _find(this.root) ;
+
   }
+contains(val, current = this.root) {
+  if (current.value === val) {
+    return true;
+  }
+  if (current.value > val && current.left) {
+    current = current.left;
+    return this.contains(val, current);
+  }
+  if (current.value < val && current.right) {
+    current = current.right;
+    return this.contains(val, current);
+  }
+  return false;
+}
 }
 
 module.exports = { BinaryTree, Node, BinarySearchTree };
 
 
-// let tree = null;
-//   tree = new BinarySearchTree();
+let tree = null;
+  tree = new BinarySearchTree();
 
-//  tree.add(5);
-//  tree.add(4);
-//  tree.add(49);
-//  tree.add(19);
-//  tree.add()
-//  console.log ('tree' , tree.find(4) )
+ tree.add(5);
+ tree.add(4);
+ tree.add(49);
+ tree.add(19);
+ tree.add()
+ console.log ('tree' , tree.contain(4) )
 //  console.log('binary serach tree' ,new  BinarySearchTree(100))
 //  console.log('binary serach tree' ,new  BinarySearchTree(50))
 
