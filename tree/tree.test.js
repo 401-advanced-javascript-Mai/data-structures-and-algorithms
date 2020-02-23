@@ -52,7 +52,7 @@ describe('BinarySearchTree' , () => {
   let list = null ;
   beforeEach(()=> {
     list = new BinarySearchTree();
-    
+
 
   });
 
@@ -61,21 +61,22 @@ describe('BinarySearchTree' , () => {
     list.add(4) ;
     list.add(1) ;
     let addToTree = list.add(12) ;
-    
+
     expect(addToTree.left.value).toEqual(1);
     expect(addToTree.right.value).toEqual(12);
   });
-  
-  
+
+
   it('should check if tree find certain value and return aboleen if it true or false' , ()=> {
     list.add(1) ;
     list.add(2) ;
     list.add(3) ;
     list.add(4) ;
     list.add(5) ;
-    
-    console.log('list' , list.contain(3))
+
+    // console.log('list' , list.contain(3))
     expect(list.contain(1)).toBe(true);
+    expect(list.contain(8)).toBe(false);
   });
 
 

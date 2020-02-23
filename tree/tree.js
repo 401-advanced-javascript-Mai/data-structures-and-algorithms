@@ -46,7 +46,7 @@ class BinaryTree {
   }
 
 
-  postOrder(){
+  postOrder() {
     let results = [];
 
     let _walk = (node) => {
@@ -61,60 +61,36 @@ class BinaryTree {
   }
 }
 
-// let tree = null;
-
-// let one = new Node("A");
-// let two = new Node("B");
-// let three = new Node("C");
-// let four = new Node("F");
-// let five = new Node("D");
-// let six = new Node ("E")
-
-// one.left = two;
-// one.right = three;
-// three.left = four;
-// two.left = five;
-// two.right = six ;
-
-// tree = new BinaryTree(one);
-
-// console.log ('tree' , tree.preOrder() )
-// console.log ('tree' , tree.inOrder() )
-// console.log ('tree' , tree.postOrder() )
+//////////////////// Binary serarch tree /////////////
 
 
 class BinarySearchTree {
-  constructor(root = null){
+  constructor(root = null) {
     this.root = root;
   }
-
-  add (value){
-    let newNode = new Node (value);
-    // console.log('hi')
+  ///////////////// add value /////////////////
+  add(value) {
+    let newNode = new Node(value);
 
     if (this.root === null) {
-      // console.log('muna');
       this.root = newNode;
       return this.root;
     }
 
-    let _search = (node)=>{
-      // console.log(node)
-      if(node.value > value){
-        if (!node.left){
-          // console.log('mai')
-          return node.left = newNode ;
+    let _search = (node) => {
+      if (node.value > value) {
+        if (!node.left) {
+          return node.left = newNode;
 
-        }else{
+        } else {
           _search(node.left);
         }
       }
 
-      if (node.value < value){
-        if (!node.right){
-          // console.log('hi')
-          return node.right = newNode ;
-        }else{
+      if (node.value < value) {
+        if (!node.right) {
+          return node.right = newNode;
+        } else {
           _search(node.right);
 
         }
@@ -125,114 +101,36 @@ class BinarySearchTree {
     return this.root;
   }
 
-// contain(value){
-// console.log(value)
-//     // let currentNodeInTheTree = this.root ;
-//  let _find = (node) =>{
-//    console.log(node)
+  //////////// check if the value exists /////////////
+  contain(value){
+    let findArray = [];
 
-// if(node.value === value){
-//   console.log('node.value' , node.value)
-  
-//   return true ;
-// }
+    let _find = (node) =>{
+      if(node.value === value){return findArray.push(node.value);}
 
-// if(node.value > value){
-//   if(node.left){
-//     _find(node.left)
-//     //   if(node.value === value){
-//     //     return true
-    
-//     // }
-//   }
-// }
-
-// if(node.value < value){
-//   if(node.right){
-//     _find(node.right);
-//   //   if(node.value === value){
-//   //     return true
-  
-//   // }
-//   }
-contain(value){
-
-  // let b  = 2;
-  let _find = (node) =>{
-    // let c = true;
-    if(node.value === value){
-      
-      // console.log('node', node) ;
-      // console.log("node.value" ,node.value)
-      // console.log(true)
-  return true ;
-      // return b === 2 ;
-    }
-   
- if(node.value > value && node.left){
-      // if(node.left){
+      if(node.value > value && node.left){
         _find(node.left);
-      // }
-    }
+      }
 
-    
-    if(node.value < value && node.right){
-      // if(node.right){
+
+      if(node.value < value && node.right){
         _find(node.right);
-      // }
+      }
+
+    };
+
+    _find(this.root) ;
+
+
+    if(findArray[0]){
+      return true;
+    }else{
+      return false ;
     }
 
-  };
-
-  _find(this.root) ;
-
   }
-contains(val, current = this.root) {
-  if (current.value === val) {
-    return true;
-  }
-  if (current.value > val && current.left) {
-    current = current.left;
-    return this.contains(val, current);
-  }
-  if (current.value < val && current.right) {
-    current = current.right;
-    return this.contains(val, current);
-  }
-  return false;
-}
 }
 
 module.exports = { BinaryTree, Node, BinarySearchTree };
-
-
-let tree = null;
-  tree = new BinarySearchTree();
-
- tree.add(5);
- tree.add(4);
- tree.add(49);
- tree.add(19);
- tree.add()
- console.log ('tree' , tree.contain(4) )
-//  console.log('binary serach tree' ,new  BinarySearchTree(100))
-//  console.log('binary serach tree' ,new  BinarySearchTree(50))
-
-// let one = new Node(10);
-// let two = new Node(9);
-// let three = new Node(8);
-// let four = new Node(5);
-// let five = new Node(4);
-// let six = new Node (2)
-
-// one.left = two;
-// one.right = three;
-// three.left = four;
-// two.left = five;
-// two.right = six ;
-
-// tree2 = new BinarySearchTree()
-// console.log ('tree' , tree.inOrder() )
-// console.log ('tree' , tree.postOrder() )
 
 
