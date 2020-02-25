@@ -20,7 +20,7 @@ function merge (left, right) {
     result.push(left[0] < right[0] ? left.shift() : right.shift());
   return result.concat(left.length ? left : right);
 }
-
+/////// I take this website as a referance https://initjs.org/merge-sort-in-javascript-4614386c1374 
 
 
 module.exports = mergeSort;
