@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-'use strict';
+
 
 const insertionSort = require('./insertion_sort.js');
 
