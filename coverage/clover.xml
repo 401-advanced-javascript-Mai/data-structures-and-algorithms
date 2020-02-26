@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1582733556975" clover="3.2.0">
+  <project timestamp="1582733556975" name="All files">
+    <metrics statements="22" coveredstatements="17" conditionals="17" coveredconditionals="12" methods="6" coveredmethods="4" elements="45" coveredelements="33" complexity="0" loc="22" ncloc="22" packages="1" files="1" classes="1"/>
+    <file name="fizz-buzz-tree.js" path="/mnt/c/Users/std28/codefellows/401/data-structures-and-algorithms/fizzbuzzTree/fizz-buzz-tree.js">
+      <metrics statements="22" coveredstatements="17" conditionals="17" coveredconditionals="12" methods="6" coveredmethods="4"/>
+      <line num="5" count="6" type="stmt"/>
+      <line num="6" count="6" type="stmt"/>
+      <line num="7" count="6" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="19" count="0" type="stmt"/>
+      <line num="20" count="0" type="stmt"/>
+      <line num="21" count="0" type="stmt"/>
+      <line num="23" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="24" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="30" count="4" type="stmt"/>
+      <line num="31" count="24" type="cond" truecount="4" falsecount="0"/>
+      <line num="32" count="1" type="stmt"/>
+      <line num="34" count="23" type="cond" truecount="2" falsecount="0"/>
+      <line num="35" count="1" type="stmt"/>
+      <line num="37" count="22" type="cond" truecount="2" falsecount="0"/>
+      <line num="38" count="1" type="stmt"/>
+      <line num="41" count="21" type="stmt"/>
+      <line num="43" count="24" type="cond" truecount="2" falsecount="0"/>
+      <line num="44" count="24" type="cond" truecount="2" falsecount="0"/>
+      <line num="46" count="4" type="stmt"/>
+      <line num="47" count="4" type="stmt"/>
+      <line num="49" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
