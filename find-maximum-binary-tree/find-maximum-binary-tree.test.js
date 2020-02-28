@@ -1,8 +1,8 @@
 'use strict';
 
- const  findMaximumValue = require('./find-maximum-binary-tree.js');
- const Node = require('./find-maximum-binary-tree.js');
- const BinaryTree = require('./find-maximum-binary-tree.js');
+ const  {findMaximumValue} = require('./find-maximum-binary-tree.js');
+ const {Node} = require('./find-maximum-binary-tree.js');
+ const {BinaryTree} = require('./find-maximum-binary-tree.js');
 
 
 
@@ -26,7 +26,7 @@ describe('find maximum value in the  BinaryTree', () => {
   tree = new BinaryTree(one);
 
   it('findMaximumValue()', () => {
-    expect(findMaximumValue(tree)).toEqual(expected);
+    expect(findMaximumValue(tree)).toEqual(9);
 
   });
 
