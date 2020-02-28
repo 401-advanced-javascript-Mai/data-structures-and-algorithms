@@ -1,4 +1,5 @@
-
+/* eslint-disable strict */
+'use strict';
 
 //// note binary tree and node method for help me test my work and built tree
 

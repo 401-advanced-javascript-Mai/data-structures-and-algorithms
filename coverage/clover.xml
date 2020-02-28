@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1582913706554" clover="3.2.0">
-  <project timestamp="1582913706554" name="All files">
+<coverage generated="1582914157957" clover="3.2.0">
+  <project timestamp="1582914157957" name="All files">
     <metrics statements="13" coveredstatements="13" conditionals="7" coveredconditionals="6" methods="4" coveredmethods="4" elements="24" coveredelements="23" complexity="0" loc="13" ncloc="13" packages="1" files="1" classes="1"/>
     <file name="find-maximum-binary-tree.js" path="/mnt/c/Users/std28/codefellows/401/data-structures-and-algorithms/find-maximum-binary-tree/find-maximum-binary-tree.js">
       <metrics statements="13" coveredstatements="13" conditionals="7" coveredconditionals="6" methods="4" coveredmethods="4"/>
-      <line num="6" count="1" type="stmt"/>
-      <line num="8" count="1" type="stmt"/>
-      <line num="9" count="6" type="cond" truecount="2" falsecount="0"/>
-      <line num="10" count="2" type="stmt"/>
-      <line num="13" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="10" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="11" count="2" type="stmt"/>
       <line num="14" count="6" type="cond" truecount="2" falsecount="0"/>
-      <line num="17" count="1" type="stmt"/>
+      <line num="15" count="6" type="cond" truecount="2" falsecount="0"/>
       <line num="18" count="1" type="stmt"/>
-      <line num="24" count="6" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
       <line num="25" count="6" type="stmt"/>
       <line num="26" count="6" type="stmt"/>
-      <line num="32" count="1" type="stmt"/>
-      <line num="38" count="1" type="stmt"/>
+      <line num="27" count="6" type="stmt"/>
+      <line num="33" count="1" type="stmt"/>
+      <line num="39" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

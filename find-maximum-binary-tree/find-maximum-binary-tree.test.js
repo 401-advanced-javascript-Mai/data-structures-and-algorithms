@@ -1,8 +1,9 @@
+/* eslint-disable strict */
 'use strict';
 
- const  {findMaximumValue} = require('./find-maximum-binary-tree.js');
- const {Node} = require('./find-maximum-binary-tree.js');
- const {BinaryTree} = require('./find-maximum-binary-tree.js');
+const  {findMaximumValue} = require('./find-maximum-binary-tree.js');
+const {Node} = require('./find-maximum-binary-tree.js');
+const {BinaryTree} = require('./find-maximum-binary-tree.js');
 
 
 
