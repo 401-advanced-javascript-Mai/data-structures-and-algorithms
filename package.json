@@ -5,7 +5,7 @@
   "main": "tree-intersecton.js",
   "scripts": {
     "test": "jest --verbose --coverage",
-    "lint":" eslint '**/*.js"
+    "lint":" eslint '**/*.js'"
   },
   "repository": {
     "type": "git",

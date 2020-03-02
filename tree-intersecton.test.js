@@ -36,7 +36,7 @@ describe('tree intersection algorithm ', ()=>{
 
   let tree1 = new BinaryTree(one);
   let tree2 = new BinaryTree(a);
-  console.log('tree2', tree2)
+  console.log('tree2', tree2);
 
   it(' treeInterSection() should find the values that shared between two tree ' , ()=>{
     let expected = [100, 160];
@@ -44,7 +44,7 @@ describe('tree intersection algorithm ', ()=>{
   });
 
   it(' treeInterSection() should return (empty tree) if thereis empty ' , ()=>{
-    let tree3= null
+    let tree3 = null;
     expect(treeInterSection(tree1 , tree3)).toEqual('empty tree');
   });
 

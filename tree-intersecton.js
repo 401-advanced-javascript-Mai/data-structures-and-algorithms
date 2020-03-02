@@ -5,10 +5,10 @@ let HashTable = require('./hashtable.js');
 function treeInterSection (tree1 , tree2){
   let hashtable = new HashTable(1024);
   let interSection = [];
-  if (!tree1 || !tree2){return 'empty tree'}
+  if (!tree1 || !tree2){return 'empty tree';}
 
   let _walk = (node)=>{
-       
+
     //   console.log(node.value , 'node');
     let key = node.value.toString();
     //   console.log(typeof key , 'key')
@@ -24,11 +24,11 @@ function treeInterSection (tree1 , tree2){
   // return hashtable ;
 
   let _walkToFind = (node) =>{
-      console.log(node)
-      let key = node.value.toString();
+    console.log(node);
+    let key = node.value.toString();
 
     if( hashtable.contains(key)){
-        console.log('node.vlue', node.value)
+      console.log('node.vlue', node.value);
       interSection.push(node.value);
     }
     if(node.left) {_walkToFind(node.left);}
