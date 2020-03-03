@@ -1,14 +1,15 @@
 # data-structures-and-algorithms
+done by mai and  muna
 ## Challenge Summary
 figure out function and test it .
 
 ## Challenge Description
- create function called tree_intersection that takes two binary tree parameters and  return a set of values found in both trees.
+ create  a function that LEFT JOINs two hashmaps into a single data structure.
 
 ## Approach & Efficiency
-tree_intersection 
+leftJoin
 time .... O(n)
 
 ## solution
-![](part1.jpg)
-![](part2.jpg)
+![](join2.jpg)
+![](join1.jpg)
