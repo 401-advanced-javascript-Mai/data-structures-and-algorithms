@@ -1,11 +1,12 @@
-/* eslint-disable indent */
+'use strict '
+'/* eslint-disable indent */'
 let {leftJoin} = require('./leftJoin.js');
 const HashTable = require('./hashtable.js');
 
 
 
 describe('LeftJoin',()=>{
-  it('  ',()=>{
+  it(' return array after join  ',()=>{
     let hashmap1 = new HashTable(1024);
     let hashmap2 = new HashTable(1024);
     hashmap1.add('fond', 'enamored');
