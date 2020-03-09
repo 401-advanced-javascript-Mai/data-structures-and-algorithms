@@ -40,7 +40,7 @@ describe('Breadth First()   Module:',()=>{
     tree = new BinaryTree(one);
     // console.log(tree,'llllllllllll');
     //   [ 1, 7, 8, 4, 27, 27, 80 ]   [ 1, 7, 27, 8, 27, 80, 4 ]
-    expect(levelOrder(tree)).toEqual([ 1, 7, 27, 8, 27, 80, 4 ]);
+    expect(levelOrder(tree)).toEqual([ [ 'A' ], [ 'B', 'C' ], [ 'D', 'E', 'F' ] ]);
 
 
   });
